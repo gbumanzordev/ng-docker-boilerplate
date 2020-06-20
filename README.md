@@ -1,5 +1,7 @@
 ![Angular-docker image](https://miro.medium.com/max/2000/1*GeGazytoczNAQSsPb-gHSw.png)
 
+This document is also available in Spanish [here](https://github.com/gbumanzor/ng-docker-boilerplate/blob/master/README_ES.md)
+
 #  :whale: Angular Development using Docker
 
 This boilerplate includes all the necessary steps to develop any angular application using :whale: Docker, both the development and the production environments have been set up for you to just do `docker-compose up` and start working.
@@ -16,7 +18,7 @@ The `docker-compose.yaml` file is the one that helps up start the container and 
 
 For the development environment, the port used is `3000` and for production environment the port being used is `3001`.
 
-### :construction_worker: Changes in package.json
+## :construction_worker: Changes in package.json
 
 In order for this boilerplate to work, you must add two scripts in `package.json`, the new structure for the scripts section is something similar to this: 
 
@@ -43,12 +45,12 @@ In order to start either your dev or prod container you will only need to do:
 docker-compose up
 ```
 
-It will build the image, download the required node and alpine images and then you will be able to check the dev environment in http://localhost:3000 and your production environment in http://localhost:3001
+It will build the image, download the required node and nginx images and then you will be able to check the dev environment in http://localhost:3000 and your production environment in http://localhost:3001
 
 If you only want to serve either dev or prod images you will only need to do `docker-compose up dev` or `docker-compose up prod` and only one of them will be served.
 
 
-### :see_no_evil: Final thougts 
-This boilerplate is entirely based on information gathered from other projects and with the great contribution of [Carlos Lopez](https://github.com/clopez-app) who's the expert on this, without his help I wouldn't even have been able to even start this boilerplate.
+## :see_no_evil: Final thougts 
+This boilerplate is entirely based on information gathered from other projects and with the great contribution of [Carlos Lopez](https://github.com/DarkDreizer) who's the expert on this, without his help I wouldn't even have been able to even start this boilerplate.
 
 Kind regards,
