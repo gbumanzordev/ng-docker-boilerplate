@@ -40,6 +40,6 @@ RUN npm run build-prod
 #production
 FROM nginx:1.17.1-alpine as prod
 
-COPY --from=build /app/dist/internal /usr/share/nginx/html
+COPY --from=build /app/dist/ngx-docker-boilerplate /usr/share/nginx/html
 
 COPY ./docker/nginx/default.conf /etc/nginx/conf.d/default.conf
