@@ -1,6 +1,6 @@
 #  :whale: Angular Development using Docker
 
-![Angular-docker image][angular-docker]
+![Angular-docker image](https://raw.githubusercontent.com/gbumanzor/ng-docker-boilerplate/master/angular-docker.png)
 
 
 This boilerplate includes all the necessary steps to develop any angular application using :whale: Docker, both the development and the production environments have been set up for you to just do `docker-compose up` and start working.
