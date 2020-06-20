@@ -11,7 +11,7 @@ The project has both a `Dockerfile` and a `docker-compose.yaml` file with the co
 
 The Dockerfile contains the commands and required imports to set up the development environment all the way until line 25, after that, the commands are for production environment, such as the imports for nginx image, the production build files and then copying them into `nginx` main folder to serve them.
 
-There's an `.env-example` file that contains global variable examples required for deployment.
+There's an `.env-example` file that contains global variable examples required for deployment. This file should be duplicated and renamed to `.env` only.
 
 ## :wrench: The docker-compose.yaml file
 The `docker-compose.yaml` file is the one that helps up start the container and build it if not built already, we set two services, `dev` and `prod` and the configurations for each.
