@@ -34,10 +34,10 @@ In order for this boilerplate to work, you must add two scripts in `package.json
 ```
 
 
-## NgInx configuration file. 
+## :rocket: NgInx configuration file. 
 And last but no least, you need to create a new file inside the *docker/nginx* folder called `default.conf` this file is going to be moved in the last step of the production build and override the default configurations for the nginx image.
 
-## Build the container
+## :building_construction: Build the container
 In order to start either your dev or prod container you will only need to do:
 ```bash
 docker-compose up
@@ -48,7 +48,7 @@ It will build the image, download the required node and alpine images and then y
 If you only want to serve either dev or prod images you will only need to do `docker-compose up dev` or `docker-compose up prod` and only one of them will be served.
 
 
-### Final thougts 
+### :see_no_evil: Final thougts 
 This boilerplate is entirely based on information gathered from other projects and with the great contribution of [Carlos Lopez](https://github.com/clopez-app) who's the expert on this, without his help I wouldn't even have been able to even start this boilerplate.
 
 Kind regards,
