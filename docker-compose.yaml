@@ -11,4 +11,14 @@ services:
       - './:/app'
     ports:
       - '3000:4200'
-  
+  prod:
+    image: internal-panel:latest
+    build:
+      target: prod
+      context: .
+      args:
+        BACK_BASE_URL: ${BASE_URL}
+        PRODUCTION: ${PRODUCTION}
+    ports:
+      - '3001:80'
+    env_file: .env
