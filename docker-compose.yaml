@@ -12,7 +12,7 @@ services:
     ports:
       - '3000:4200'
   prod:
-    image: internal-panel:latest
+    image: angular-docker-boilerplate:latest
     build:
       target: prod
       context: .

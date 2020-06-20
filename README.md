@@ -1,27 +1,16 @@
-# NgxDockerBoilerplate
+#  :whale: Angular Development using Docker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+This boilerplate includes all the necessary steps to develop any angular application using :whale: Docker, both the development and the production environments have been set up for you to just do `docker-compose up` and start working.
 
-## Development server
+## :triangular_flag_on_post: How does it work?
+The project has both a `Dockerfile` and a `docker-compose.yaml` file with the configurations for Docker.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The Dockerfile contains the commands and required imports to set up the development environment all the way until line 25, after that, the commands are for production environment, such as the imports for nginx image, the production build files and then copying them into `nginx` main folder to serve them.
 
-## Code scaffolding
+There's an `.env-example` file that contains global variable examples required for deployment.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## The docker-compose.yaml file
+The `docker-compose.yaml` file is the one that helps up start the container and build it if not built already, we set two services, `dev` and `prod` and the configurations for each.
 
-## Build
+For the development environment, the port used is `3000` and for production environment the port being used is `3001`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
