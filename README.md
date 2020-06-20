@@ -1,4 +1,4 @@
-![Angular-docker image](https://raw.githubusercontent.com/gbumanzor/ng-docker-boilerplate/master/angular-docker.png)
+![Angular-docker image](https://miro.medium.com/max/2000/1*GeGazytoczNAQSsPb-gHSw.png)
 
 #  :whale: Angular Development using Docker
 
@@ -49,6 +49,6 @@ If you only want to serve either dev or prod images you will only need to do `do
 
 
 ### Final thougts 
-This boilerplate is mostly based on information gathered from other projects and with the great (almost everything) contribution of [Carlos Lopez](https://github.com/clopez-app), without his help I wouldn't even have been able to even start this boilerplate.
+This boilerplate is entirely based on information gathered from other projects and with the great contribution of [Carlos Lopez](https://github.com/clopez-app) who's the expert on this, without his help I wouldn't even have been able to even start this boilerplate.
 
 Kind regards,
