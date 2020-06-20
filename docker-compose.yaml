@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+  dev:
+    build:
+      target: base
+      context: .
+      args:
+        BACK_BASE_URL: ${BASE_URL}
+        PRODUCTION: ${PRODUCTION}
+    volumes:
+      - './:/app'
+    ports:
+      - '3000:4200'
+  
