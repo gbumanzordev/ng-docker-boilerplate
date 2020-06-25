@@ -53,7 +53,7 @@ It will build the image, download the required node and nginx images and then yo
 
 If you only want to serve either dev or prod images you will only need to do `docker-compose up dev` or `docker-compose up prod` and only one of them will be served.
 
-# :white_check_mark: CI Testing
+## :white_check_mark: CI Testing
 
 In order to make use of CI Testing a Headless browser is required.
 Configuration for Headless Chrome is already setup within the proyect following the official guidelines from Angular [Angular Testing](https://angular.io/guide/testing). Chormium is also included in the docker image configuration, however additional configuration may be required for your specific environment or pipeline.
