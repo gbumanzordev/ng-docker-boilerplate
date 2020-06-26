@@ -12,7 +12,7 @@ RUN apk add --no-cache \
         ca-certificates \
         ttf-freefont
 
-ENV CHROME_BIN /usr/bin/chromium-browser
+ENV CHROME_BIN=/usr/bin/chromium-browser
 
 WORKDIR /app
 

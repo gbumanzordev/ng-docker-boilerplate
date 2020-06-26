@@ -56,13 +56,22 @@ If you only want to serve either dev or prod images you will only need to do `do
 ## :white_check_mark: CI Testing
 
 In order to make use of CI Testing a Headless browser is required.
-Configuration for Headless Chrome is already setup within the proyect following the official guidelines from Angular [Angular Testing](https://angular.io/guide/testing). Chormium is also included in the docker image configuration, however additional configuration may be required for your specific environment or pipeline.
+
+Configuration for Headless Chrome is already setup within the proyect following the official guidelines from Angular [Angular Testing](https://angular.io/guide/testing).
+
+Chormium is also included in the docker image configuration, however additional configuration may be required for your specific environment or pipeline.
 
 To run the test within the CI pipeline the following commands are recommended:
 
 ```bash
 npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
 npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
+```
+
+In order to run the test with your local image make sure to run `bash docker-compose build` and then use the following command:
+
+```bash
+docker run -it --rm ng-docker-boilerplate_dev npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
 ```
 
 ## :see_no_evil: Final thougts
